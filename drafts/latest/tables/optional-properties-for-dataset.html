@@ -1,0 +1,465 @@
+<table class="simple">
+<thead>
+<tr>
+<th>
+<p>Property</p>
+</th>
+<th>
+<p>URI</p>
+</th>
+<th>
+<p>Range</p>
+</th>
+<th>
+<p>Usage note</p>
+</th>
+<th>
+<p>Card.</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>access rights</p>
+</td>
+<td>
+<p><code>dct:accessRights</code></p>
+</td>
+<td>
+<p><code>dct:RightsStatement</code></p>
+</td>
+<td>
+<p>This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (<code>:public</code>, <code>:restricted</code>, <code>:non-public</code>) will be created and maintained by the Publications Office of the EU.</p>
+</td>
+<td>
+<p>0..1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>creator</p>
+</td>
+<td>
+<p><code>dct:creator</code></p>
+</td>
+<td>
+<p><code>foaf:Agent</code></p>
+</td>
+<td>
+<p>This property refers to the entity primarily responsible for producing the dataset</p>
+</td>
+<td>
+<p>0..1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>conforms to</p>
+</td>
+<td>
+<p><code>dct:conformsTo</code></p>
+</td>
+<td>
+<p><code>dct:Standard</code></p>
+</td>
+<td>
+<p>This property refers to an implementing rule or other specification.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>documentation</p>
+</td>
+<td>
+<p><code>foaf:page</code></p>
+</td>
+<td>
+<p><code>foaf:Document</code></p>
+</td>
+<td>
+<p>This property refers to a page or document about this Dataset.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>frequency</p>
+</td>
+<td>
+<p><code>dct:accrualPeriodicity</code></p>
+</td>
+<td>
+<p><code>dct:Frequency</code></p>
+</td>
+<td>
+<p>This property refers to the frequency at which the Dataset is updated.</p>
+</td>
+<td>
+<p>0..1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>has version</p>
+</td>
+<td>
+<p><code>dct:hasVersion</code></p>
+</td>
+<td>
+<p><code>dcat:Dataset</code></p>
+</td>
+<td>
+<p>This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>identifier</p>
+</td>
+<td>
+<p><code>dct:identifier</code></p>
+</td>
+<td>
+<p><code>rdfs:Literal</code></p>
+</td>
+<td>
+<p>This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>is referenced by</p>
+</td>
+<td>
+<p><code>dct:isReferencedBy</code></p>
+</td>
+<td>
+<p><code>rdfs:Resource</code></p>
+</td>
+<td>
+<p>This property provides a link to a description of a relationship with another resource</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>is version of</p>
+</td>
+<td>
+<p><code>dct:isVersionOf</code></p>
+</td>
+<td>
+<p><code>dcat:Dataset</code></p>
+</td>
+<td>
+<p>This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>landing page</p>
+</td>
+<td>
+<p><code>dcat:landingPage</code></p>
+</td>
+<td>
+<p><code>foaf:Document</code></p>
+</td>
+<td>
+<p>This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>language</p>
+</td>
+<td>
+<p><code>dct:language</code></p>
+</td>
+<td>
+<p><code>dct:LinguisticSystem</code></p>
+</td>
+<td>
+<p>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>other identifier</p>
+</td>
+<td>
+<p><code>adms:identifier</code></p>
+</td>
+<td>
+<p><code>adms:Identifier</code></p>
+</td>
+<td>
+<p>This property refers to a secondary identifier of the Dataset, such as MAST/ADS [[?MAST-ADS]], [[?DataCite]], [[?DOI]], [[?EZID]] or [[?W3ID]].</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>provenance</p>
+</td>
+<td>
+<p><code>dct:provenance</code></p>
+</td>
+<td>
+<p><code>dct:ProvenanceStatement</code></p>
+</td>
+<td>
+<p>This property contains a statement about the lineage of a Dataset.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>qualified attribution</p>
+</td>
+<td>
+<p><code>prov:qualifiedAttribution</code></p>
+</td>
+<td>
+<p><code>prov:Attribution</code></p>
+</td>
+<td>
+<p>This property refers to a liink to an Agent having some form of responsibility for the resource</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>qualified relation</p>
+</td>
+<td>
+<p><code>dcat:qualifiedRelation</code></p>
+</td>
+<td>
+<p><code>dcat:Relationship</code></p>
+</td>
+<td>
+<p>This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>related resource</p>
+</td>
+<td>
+<p><code>dct:relation</code></p>
+</td>
+<td>
+<p><code>rdfs:Resource</code></p>
+</td>
+<td>
+<p>This property refers to a related resource.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>release date</p>
+</td>
+<td>
+<p><code>dct:issued</code></p>
+</td>
+<td>
+<p><code>rdfs:Literal</code> typed as <code>xsd:date</code> or <code>xsd:dateTime</code></p>
+</td>
+<td>
+<p>This property contains the date of formal issuance (e.g., publication) of the Dataset.</p>
+</td>
+<td>
+<p>0..1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>sample</p>
+</td>
+<td>
+<p><code>adms:sample</code></p>
+</td>
+<td>
+<p><code>dcat:Distribution</code></p>
+</td>
+<td>
+<p>This property refers to a sample distribution of the dataset</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>source</p>
+</td>
+<td>
+<p><code>dct:source</code></p>
+</td>
+<td>
+<p><code>dcat:Dataset</code></p>
+</td>
+<td>
+<p>This property refers to a related Dataset from which the described Dataset is derived.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>spatial resolution</p>
+</td>
+<td>
+<p><code>dcat:spatialResolutionInMeters</code></p>
+</td>
+<td>
+<p><code>xsd:decimal</code></p>
+</td>
+<td>
+<p>This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>temporal resolution</p>
+</td>
+<td>
+<p><code>dcat:temporalResolution</code></p>
+</td>
+<td>
+<p><code>xsd:duration</code></p>
+</td>
+<td>
+<p>This property refers to the minimum time period resolvable in the dataset.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Type</p>
+</td>
+<td>
+<p><code>dct:type</code></p>
+</td>
+<td>
+<p><code>skos:Concept</code></p>
+</td>
+<td>
+<p>This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.</p>
+</td>
+<td>
+<p>0..1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>update/ modification date</p>
+</td>
+<td>
+<p><code>dct:modified</code></p>
+</td>
+<td>
+<p><code>rdfs:Literal</code> typed as <code>xsd:date</code> or <code>xsd:dateTime</code></p>
+</td>
+<td>
+<p>This property contains the most recent date on which the Dataset was changed or modified.</p>
+</td>
+<td>
+<p>0..1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>version</p>
+</td>
+<td>
+<p><code>owl:versionInfo</code></p>
+</td>
+<td>
+<p><code>rdfs:Literal</code></p>
+</td>
+<td>
+<p>This property contains a version number or other version designation of the Dataset.</p>
+</td>
+<td>
+<p>0..1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>version notes</p>
+</td>
+<td>
+<p><code>adms:versionNotes</code></p>
+</td>
+<td>
+<p><code>rdfs:Literal</code></p>
+</td>
+<td>
+<p>This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>was generated by</p>
+</td>
+<td>
+<p><code>prov:wasGeneratedBy</code></p>
+</td>
+<td>
+<p><code>prov:Activity</code></p>
+</td>
+<td>
+<p>This property refers to an activity that generated, or provides the business context for, the creation of the dataset.</p>
+</td>
+<td>
+<p>0..n</p>
+</td>
+</tr>
+</tbody>
+</table>
